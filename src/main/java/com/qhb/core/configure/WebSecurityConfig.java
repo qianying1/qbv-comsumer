@@ -1,3 +1,4 @@
+/*
 package com.qhb.core.configure;
 
 import com.alibaba.dubbo.config.annotation.Reference;
@@ -13,9 +14,11 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
 
+*/
 /**
  * Created by qianying on 2018/6/10.
- */
+ *//*
+
 @Configuration
 @EnableWebMvcSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)//开启security注解
@@ -62,25 +65,30 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-    /**
+    */
+/**
      * 设置用户密码的加密方式为MD5加密
      *
      * @return
-     */
+     *//*
+
     @Bean
     public Md5PasswordEncoder passwordEncoder() {
         return new Md5PasswordEncoder();
 
     }
 
-    /**
+    */
+/**
      * 自定义UserDetailsService，从数据库中读取用户信息
      *
      * @return
-     */
+     *//*
+
     @Bean
     public UserSecureService userDetailService() {
         return userSecureService;
     }
 
 }
+*/
